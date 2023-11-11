@@ -49,6 +49,9 @@ TF-IDF Cosine Similarity uses the Term Frequency-Inverse Document Frequency metr
 
 TF-IDF Euclidean Distance
 TF-IDF Euclidean Distance measures the Euclidean distance between the TF-IDF vectors of two documents. Smaller Euclidean distance values indicate greater similarity between the documents.
+![image](https://github.com/elaaatif/File-Comparison-Web-Application/assets/122917261/d961b35e-7499-42da-85cd-5050c9926cde)
+![image](https://github.com/elaaatif/File-Comparison-Web-Application/assets/122917261/060af93e-b440-45a8-96c1-e2d1622ec2cb)
+![image](https://github.com/elaaatif/File-Comparison-Web-Application/assets/122917261/50086b5a-7d1a-44c5-a4ab-6e62e33d7de4)
 
 Additional Notes
 The application automatically creates an "uploads" directory to store uploaded files temporarily.
