@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Comparison App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <h1>File Comparison App</h1>
+    <form action="/compare" method="post" enctype="multipart/form-data">
+        <label for="file1">File 1:</label>
+        <input type="file" name="file1" id="file1" accept=".txt" required>
+
+        <label for="file2">File 2:</label>
+        <input type="file" name="file2" id="file2" accept=".txt" required>
+
+        <label for="calculation_method">Calculation Method:</label>
+        <select name="calculation_method" id="calculation_method" required>
+            <option value="cosine">Cosine Similarity</option>
+            <option value="euclidean">Euclidean Distance</option>
+            <option value="levenshtein">Levenshtein Distance</option>
+            <option value="tf_idf_cosine">TF-IDF Cosine Similarity</option>
+            <option value="tf_idf_euclidean">TF-IDF Euclidean Distance</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <button type="submit">Compare</button>
+    </form>
+
+ {% if result_method %}
+        <h2>Method:</h2>
+        <p>{{ result_method }}</p>
+        <h2>Explanation:</h2>
+        <p>{{ explanation }}</p>
+    {% endif %}
+
+    <div id="results">
+        {% if results is not none %}
+            <h2>Result:</h2>
+            <p>{{ results }}</p>
+            <h2>Result Comparison:</h2>
+            <p>{{ comparison }}</p>
+        {% endif %}
+    </div> 
+</body>
+<footer>
+    <h3>Project Contributors:</h3>
+    <ul>
+        <li>Abdelatif Mekri</li>
+        <li>Abdelmalek Slimani</li>
+        <li>Kawther XXX</li>
+        <li>Nahla Yasmine Mihoubi</li>
+        <li>Salah Eddine Teffahi</li>
+    </ul>
+</footer>
+</body>
+</html>
+</html>

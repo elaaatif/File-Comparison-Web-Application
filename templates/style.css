@@ -1,0 +1,44 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: black;
+    margin: 20px;
+}
+
+h1 {
+    color: purple;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input[type="file"],
+select {
+    margin-top: 5px;
+    padding: 8px;
+}
+
+button {
+    padding: 10px;
+    background-color: purple;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6a0080;
+}
+
+#results {
+    margin-top: 20px;
+}
+
+/* Add more styles as needed */
